@@ -24,7 +24,7 @@ email: Info@apeng.ca
 description: AP Engineering is headquartered in Campbell River, BC and can assist with automation and control issues as they arise. PLC /HMI programming, design, and maintenance; Service contracts, SCADA, PID Tuning and much more.. 
 
 
-baseurl: "/blog" # the subpath of your site, e.g. /blog
+baseurl: "/_posts" # the subpath of your site, e.g. /blog
 url: "https://ap-engineering.github.io/" # the base hostname & protocol for your site, e.g. http://example.com
 #twitter_username: jekyllrb
 #github_username:  jekyll
