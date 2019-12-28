@@ -1,0 +1,119 @@
+@charset "utf-8";
+
+/* gridlines for the main page and others; Each of the columns is split into 12.
+	Therefore on each row there will need to be a maximum of 100% for the items to work
+	Used like <div class="row"> <div class="col-xx">
+	https://www.w3schools.com/css/tryit.asp?filename=tryresponsive_styles */
+[class*="col-"]{
+	box-sizing: border-box;
+}
+col-1 {
+	float: left;
+	width: 8.33%;
+}
+col-2 {
+	float: left; 
+	width: 16.66%;
+}
+col-3 {
+	float: left;  
+	width: 25%;}
+col-4 {
+	float: left; 
+	width: 33.33%;}
+col-5 {
+	float: left; 
+	width: 41.66%;
+}
+col-6 {
+	float: left;  
+	width: 50%;
+}
+col-7 {
+	float: left;
+	width: 58.33%;
+}
+col-8 {
+	float: left;  
+	width: 66.66%;
+}
+col-9 {
+	float: left;  
+	width: 75%;
+}
+col-10 {
+	float: left;  
+	width: 83.33%;
+}
+col-11 {
+	float: left; 
+	width: 91.66%;
+}
+col-12 {
+	float: left; 
+	width: 100%;
+} 
+
+/*-------------End of Gridline Spacing---------------------------------------*/
+
+.row:after{
+	content: "";
+  	display: table;
+  	clear: both;
+}
+
+#row2 {
+    background-color:#CCCCCC;	
+}
+
+#row3 {
+
+}
+
+#row4 {
+    background-color: #CCCCCC;	
+	height: 50px;
+}
+
+.Padding {
+    padding: 10px;
+
+}
+
+.sitePadding{
+	padding: 13px 5em;
+    min-width: 1000px;
+}
+
+#row1_service {
+   padding: 13px 5em;
+}
+
+#row2_service {
+	padding: 13px 5em;	
+}
+
+#row3_service {
+	padding: 13px 5em;
+}
+
+#row1_contact {
+	padding:0 0em 10px 10em;
+}
+
+#row2_About {
+	padding: 13px 10em;
+}
+
+#row2_proMan {
+	padding: 13px 10em;
+	min-width: 400px;
+}
+
+.550mwid {
+    min-width: 500px;
+}
+
+.300mwd {
+    min-width: 300px;
+}

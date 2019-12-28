@@ -1,0 +1,10 @@
+@charset "utf-8";
+/* CSS Document */
+
+.Laptop{
+    min-width: 700px
+}
+
+.phone{
+    min-width: 400px;
+}
