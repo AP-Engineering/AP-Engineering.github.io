@@ -1,137 +1,33 @@
 <!doctype html>
+<!-- New Popup window for Info on service screen -->
+ 
 <html>
 <head>
-<meta charset="utf-8">
-<meta http-equiv="X-UA-Compatible" content="IE=edge">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-<title>AP Engineering - Home</title>
-<link href="CSS/websiteStyles.css" rel="stylesheet" type="text/css">
-<link href="CSS/columnStyles.css" rel="stylesheet" type="text/css">
+<meta charset="UTF-8">
+<title>My Web Page</title>
+<script src="popupService.js"></script>
+    <script>
+        function call()
+        {
+            popup = window.open('http://www.google.co.in');         
+            setTimeout(wait, 8000);
+        }   
+        function caller()
+        {
+            setInterval(call, 12000);
+        }
+        function wait()
+        {
+            popup.close();
+        }
+    </script>
 </head>
+<body onload="caller();">
 
-<body>
-<header class="top_Nav">
-	<nav class="box" id="end"></nav>
-  	<nav class="box" id="six"><a href="https://www.apeng.ca/wordpress/" tabindex="6" title="News" target="_self">News</a></nav>
-  	<nav class="box" id="five"><a href="Products-and-Manuals.html" tabindex="5" title="Product and Manuals" target="_self">Product and Manuals</a></nav>
-  	<nav class="box" id="four"><a href="About-Us.html" tabindex="4" title="About us" target="_self">About us</a></nav>
-  	<nav class="box" id="three"><a href="Contact.html" tabindex="3" title="Contact" target="_self">Contact</a></nav>
-	<nav class="box" id="two"><a href="Services.html" tabindex="2" title="Service" target="_self">Service</a></nav>
-  	<nav class="box" id="one"><a href="Index.html" tabindex="1" title="Home" target="_self">Home</a></nav>
- 	<div class="logo">
-		AP Engineering<br>250-201-3720
-	</div>
-</header>
+    
 <main>
-  <section class="sitePadding">
-      <!---- First row in website just below the header ------------>
-    <div class="row" style="padding-top: 120px;" id="row1">
-      <col-7>
-        <div class="container"> 
-          <img src="Images/IMG_3923_d800-1.jpg" alt="" class="pic" id="mainPic"/> 
-          <div class="centered" id="large">Automation<br>Control<br>SCADA</div>
-        </div>
-      </col-7>
-      <col-5>
-        <section class="R1Right">
-          <h2>About</h2>
-          <p>AP Engineering is headquartered in Campbell River, BC and can assist with automation and control issues as they arise. Though not complete, a sample list is provided below. Give us a call today at 250-201-3720 to find out how we can help each other! <a href="Contact.html" title="Contact" target="new">Contact</a> </p>
-          <p></p>
-          <ul style="list-style-type: square;">
-            <li>PLC programming, design, and maintenance</li>
-            <li>HMI programming, design, and maintenance</li>
-            <li>Migration of obsolete equipment to today's standards</li>
-            <li>Service contracts, to support ongoing operations</li>
-            <li>Advanced Control methods; PID loop tuning, Feed-forward control</li>
-            <li>Ethernet, OPC, Serial communications, Remote support</li>
-            <li>VFD, SCADA Master Plan, Troubleshooting various issues</li>
-          </ul>
-          <p></p>
-        </section>
-      </col-5>
-      </div>
-    <div class="row" id="row2">
-      <col-12>
-        <h2>What We Do</h2>
-      </col-12>
-  </div>
-    <!---------------Gallery of service Highlights-------------------
-		Three columns; picture on top, description below 
-			There is padding around each column 15px------------->
-    <div class="row" id="row3">
-    <section>
-    <!---service1--->
-  <col-3>
-    <div class="Padding">
-      <!---pic onTop------->
-      <img src="Images/2017-12-11_15-07-29_403_d400.jpeg" alt="" width="400" height="300" class="picGallery"/>
-      <!-------Description with padding on top------->
-      <div class="BBlue">
-        <h3>Control Software Design</h3>
-        <p>AP Engineering is not affiliated with a specific vendor and thus can assist with objective recommendation for your automation project.<br>
-          We are experienced with Rockwell / Allen-bradley, Horner...</p>
-        </div>
-      </div>
-    </col-3>
-    <!---Service2-->
-			
-		<col-3>
-			<div class="Padding">
-				<img src="Images/2018-01-19_09-40-48_443_d400.jpeg" width="400" height="300" alt="" class="picGallery"/>
-				<!-------Description with padding on top------->
-				<div class="BBlue">
-					<h3>Operator Interface Design</h3>
-					<p>AP Engineering works with their clients to develop a graphical HMI / MMI / OIT that is best suited to each client.<br> We are experienced with Rockwell FactoryTalk View (SE & ME), Wonderware...</p>	
-				</div>
-			</div>
-		</col-3>
-<!-------Service3----->
-			
-		<col-3>
-			<div class="Padding">	
-				<img src="Images/2018-05-29_08-58-17_262_d400.jpeg" width="400" height="400" alt="" class="picGallery"/>
-				<!-------Description with padding on top------->
-				<div class="BBlue">
-					<h3>Control System Design</h3>
-					<p>AP Engineering will design a control system that will bring your project from concept to reality!
-						<ul>
-							<li>Migration of obsolete equipment</li>
-							<li>SCADA Master Plan</li>
-						</ul>
-					</p>
-				</div>
-			</div>
-		</col-3>
-<!-----All Services link----->
-		<col-3>
-			
-				<h3><a href="Services.html"><div class="txtMiddle" id="largerTxt">All Services</div></a></h3>
-					
-		</col-3>
-	</section>
-	</div>
-    </section>
-<!--------------Footer------------>	
-	<footer style="padding:5px;">
-		<div class="row" id="row4">
-			<col-12>
-				<col-4>	<div class="FooterLeft">All rights reserved ©</div>
-				</col-4>
-				<col-4>	<div class="FooterMiddle">AP Engineering<br>Campbell River, BC</div>
-				</col-4>
-				<col-4>
-					<div class="FooterRight">250-201-3720<br>Info@apeng.ca</div>
-				</col-4>	
-			</col-12>
-		</div>	
-	</footer>
-
+ <h1 id="countDown">it closed  after 10 sec</h1>
 </main>
-	
-
-
+  
 </body>
 </html>
-
-
