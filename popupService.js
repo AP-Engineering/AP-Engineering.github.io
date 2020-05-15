@@ -1,6 +1,6 @@
 function call()
         {
-            popup = window.open(apeng.ca);         
+            popup = window.open('http://www.google.co.in');         
             setTimeout(wait, 8000);
         }   
 function caller()
